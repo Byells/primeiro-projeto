@@ -1,62 +1,99 @@
- <!-- oooiiiiiiiiiiiiii -->
-<!DOCTYPE HTML> <!-- DTD do HTML5 -->
+<!-- oooiiiiiiiiiiiiii -->
+<!DOCTYPE html>
+<!-- DTD do HTML5 -->
 <!-- Document Type Definition é a instrução que vai orientar o browser a carregar o conjunto correto de bibliotecas da versão do HTML em questão.  -->
 
-<html>
+<html lang="pt-br">
+  <!-- primeiro filho do HTML = head. -->
 
+  <head>
+    <!-- os filhos do head são em sua maioria tags de metadados. : meta. -->
 
-	<!-- primeiro filho do HTML = head. -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width:device-width,initial-scale=1.0" />
+    <title>Página Básica</title>
+  </head>
+  <!-- segundo filho do HTML = body -->
+  <body>
+    <div class="container">
+      <header class="cabecalho">
+        <h1 style="text-align: center; font: normal 20pt Arial">
+          Minha Página
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </header>
 
-	<head>
-		<!-- os filhos do head são em sua maioria tags de metadados. : meta. -->
+      <section id="conteudo-principal">
+        <div>
+          <h2>HELP</h2>
+          <p>
+            Help - Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Illo incidunt aut quia tempore facere ipsam minus explicabo, ipsum
+            sed non quam in quas pariatur quos officiis deserunt reprehenderit
+            inventore, eius dignissimos, veritatis laborum. Assumenda, inventore
+            nesciunt dolorem sapiente iste quisquam blanditiis saepe voluptatem
+            adipisci, deleniti quis voluptas eligendi, facere ducimus maxime
+            quaerat tempora libero minima dolorum sit distinctio obcaecati?
+            Veritatis blanditiis eveniet exercitationem quo sapiente velit minus
+            ipsam corporis fugiat doloribus. Quibusdam, dolore! Beatae, quaerat!
+            Magni ut ea tempore praesentium accusamus modi, harum labore
+            necessitatibus veniam eum officiis vero fugiat eius vitae sint,
+            libero perspiciatis qui. Ipsam ipsa eveniet illum!
+          </p>
+          <a href="#">Mais...</a>
+        </div>
+        <div>
+          <h2>ABOUT</h2>
+          <p>
+            About - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Veritatis praesentium nostrum aperiam excepturi. Nobis placeat
+            dolorem labore, facilis excepturi reprehenderit a dignissimos quae
+            odit id suscipit corporis nisi nesciunt impedit sunt sit dolore
+            mollitia cum sed quos unde at pariatur. Dignissimos consequuntur
+            eveniet libero! Recusandae saepe corporis iste consectetur
+            accusantium.
+          </p>
+          <a href="#">Mais...</a>
+        </div>
+        <div id="contact">
+          <h2>CONTACT</h2>
+          <form>
+            <fieldset>
+              <legend>Customer Contact</legend>
+              <div>
+                <label for="idNm">Name</label>
+                <input
+                  type="text"
+                  name="txtNm"
+                  id="idNm"
+                  placeholder="Type your name..."
+                />
+              </div>
+              <div>
+                <button type="button">Send</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </section>
 
-		<meta charset="UTF-8"/>
-		<meta name="viewport" content="width:device-width,initial-scale=1.0"/>
-		<title> EXEMPLO </title>	
-			
-	</head>
-	<!-- segundo filho do HTML = body -->
-	<body>
-		
-		<div class="container">
-			<header class="cabecalho">
-				<h1 style="text-align: center; font: normal 20pt Arial">Minha Página</h1>
-				<nav>
-					<ul>
-						<li><a href="https://www.Fiap.com.br" target="_blank">FIAP</a></li>
-						<li> <a href="https://www.google.com.br" target="_blank">Google</a></li>
-						<li> <a href="https://github.com" target="_blank">GitHub</a></li>
-					</ul>
-				</nav>
-				
-			</header>
-
-			<section id="conteudo-principal">
-				<p>CONTEUDO...</p>
-
-			</section>
-
-			<footer class="rodape">
-					
-				
-				<nav>
-					<ul>
-						<li><a href="#">Item - 1</a></li>
-						<li><a href="#">Item - 2</a></li>
-						<li><a href="#">Item - 3</a></li>
-					</ul>
-				</nav>
-
-			</footer>
-
-
-
-		</div>
-
-
-
-
-	</body>
-
-
-</html> 
+      <footer class="rodape">
+        <nav>
+          <ul>
+            <li><a href="https://www.Fiap.com.br" target="_blank">FIAP</a></li>
+            <li>
+              <a href="https://www.google.com.br" target="_blank">Google</a>
+            </li>
+            <li><a href="https://github.com" target="_blank">GitHub</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>
