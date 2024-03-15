@@ -13,35 +13,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width:device-width,initial-scale=1.0" />
     <title>Página Básica</title>
+
+
+
+    <style>
+
+      body{
+        background-color: antiquewhite;
+      }
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+     
+     #cabecalho > h1 {
+        
+            text-align: center;
+            font: normal 20pt Arial;
+            color: cornflowerblue;
+            background-color: rgb(145, 226, 202);
+            padding: 10px 0;
+            box-shadow: 4px 3px 5px #606495 ;
+            border-radius: 5px;
+          
+      }
+      ul{
+        list-style: none;
+        width: 181%;
+      }
+
+      #cabecalho > nav {
+       margin: 15px 0;
+
+      }
+
+      #cabecalho li {
+        display: inline-block;
+       margin: 0 8%;
+      }
+
+      #cabecalho li img{
+        display: block;
+        width: 48pt;
+        min-width: 10%;
+      }
+
+      .helpp h2{
+        font: normal 17pt Arial;
+        text-align: center;
+        background-color: #606495;
+        margin: 15pt;
+        color: rgb(255, 255, 253);
+       
+      }
+      #aboutt h2{
+        font: normal 17pt Arial;
+        text-align: center;
+        background-color: #606495;
+        margin: 15pt;
+        color: rgb(255, 255, 253);
+       
+      }
+      
+      #contact h2{
+        font: normal 17pt Arial;
+        text-align: center;
+        background-color: #606495;
+        margin: 15pt;
+        color: rgb(255, 255, 253);
+       
+      
+      }
+
+      .rodape ul{
+        list-style: none;
+        display: inline-block;
+      }
+
+
+
+    </style>
+
+
+
   </head>
   <!-- segundo filho do HTML = body -->
   <body>
     <div class="container">
-      <header class="cabecalho">
-        <h1
-          style="
-            text-align: center;
-            font: normal 20pt Arial;
-            color: cornflowerblue;
-            background-color: darkgreen;
-            padding: 10px 0;
-            box-shadow: 4px 3px 5px #606495 ;
-            border-radius: 5px;
-            "
-        >
+      <header id="cabecalho">
+        <h1>
           Minha Página
         </h1>
         <nav>
           <ul>
-            <li><a href="./páginas/help.html"> <img src="./images/Help.png" alt="Circulo com ponto de interrogacao" width="17pt"> </a></li>
-            <li><a href="#contact"><img src="./images/contact.png" alt="Envelope de carta" width="17pt"></a></li>
-            <li><a href="./páginas/about.html"><img src="./images/aboutt.png" alt="Circulo com 'i' no meio" width="17pt"></a></li>
+            <li><a href="./páginas/help.html"> <img src="./images/Help.png" alt="Circulo com ponto de interrogacao" > </a></li>
+            <li><a href="#contact"><img src="./images/contact.png" alt="Envelope de carta" ></a></li>
+            <li><a href="./páginas/about.html"><img src="./images/aboutt.png" alt="Circulo com 'i' no meio"></a></li>
           </ul>
         </nav>
       </header>
 <hr>
       <section id="conteudo-principal">
-        <div>
+        <div class="helpp">
           <h2>HELP</h2>
           <p>
             Help - Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -59,7 +133,7 @@
           </p>
           <a href="#">Mais...</a>
         </div>
-        <div>
+        <div id="aboutt">
           <h2>ABOUT</h2>
           <p>
             About - Lorem ipsum dolor sit amet consectetur adipisicing elit.
